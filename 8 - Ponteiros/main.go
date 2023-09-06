@@ -11,4 +11,19 @@ func main(){
 
 	variavel1 ++
 	fmt.Println(variavel1,variavel2)
+
+	// PONTEIRO É UMA REFERÊNCIA DE MEMÓRIA
+	var variavel3 int 
+	var ponteiro *int
+	
+	variavel3 = 100
+	ponteiro = &variavel3
+
+	fmt.Println(variavel3,ponteiro)// APONTA para onde está salvo o valor na memória 
+	fmt.Println(variavel3,*ponteiro)// MOSTRA o valor que existe no local que ele apontou
+
+	variavel3 = 150
+	fmt.Println(variavel3,ponteiro)
+	fmt.Println(variavel3,*ponteiro)
+	
 } 
