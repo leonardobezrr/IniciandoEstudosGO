@@ -34,4 +34,26 @@ func main (){
 
 	fmt.Println(reflect.TypeOf(lista1))
 	fmt.Println(reflect.TypeOf(array4)) // Possuem tipos diferentes 
+
+	// Arrays internos 
+	fmt.Println("--------")
+
+	lista3 := make([]float32,10,11)
+	fmt.Println(lista3)
+	fmt.Println("Tamanho: ",len(lista3))
+	fmt.Println("Capacidade: ",cap(lista3))
+	lista3 = append(lista3,5 )
+	fmt.Println(lista3)
+	lista3 = append(lista3,5 )
+	fmt.Println(lista3)
+	fmt.Println("Tamanho: ",len(lista3))
+	fmt.Println("Capacidade: ",cap(lista3)) // Quando  o Go identifica que o slice vai estourar, ele dobra a capacidade
+
+	fmt.Println("---------------\n    Slice 4\n---------------")
+	lista4 := make([]float32,5)
+	lista4 = append(lista4, 2)
+	fmt.Println(lista4)
+	fmt.Println("Tamanho: ",len(lista4))
+	fmt.Println("Capacidade: ",cap(lista4))
+	
 }
