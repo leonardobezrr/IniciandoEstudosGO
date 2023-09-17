@@ -15,7 +15,7 @@ func diaDaSemana(numero int)string{
 	switch numero {
 	case 1: 
 		return "Domingo"
-		//fallthrough - Utilizado para empurrar para a prómixa condição
+		//fallthrough - Utilizado para empurrar para a prómixa condição 
 	case 2:
 		return "Segunda"
 	case 3:
